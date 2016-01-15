@@ -199,5 +199,9 @@ void cargar_palabras(TLista *lista, FILE *f) {
         insertar_palabra(lista, palabra);
       }
     }
+
+    if (strlen(palabra) > 0) {
+      insertar_palabra(lista, palabra);
+    }
   }
 }
