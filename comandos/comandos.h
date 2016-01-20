@@ -34,6 +34,8 @@ void comando_info_palabras(estado_t *, FILE *);
 void comando_ranking_caracteres(estado_t *, int);
 void comando_ranking_palabras(estado_t *, int);
 
+void comando_suma(TLista *);
+
 void comando_buscar(estado_t *, char *);
 
 #endif

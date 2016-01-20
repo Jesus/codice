@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-g -Wall
 
-SRCS=main.c lista.c util.c comandos/origen.c comandos/diccionario.c comandos/neutro.c comandos/info.c comandos/ranking.c comandos/buscar.c
+SRCS=main.c lista.c util.c comandos/origen.c comandos/diccionario.c comandos/neutro.c comandos/info.c comandos/ranking.c comandos/buscar.c comandos/suma.c
 
 OBJS=$(SRCS:.c=.o)
 

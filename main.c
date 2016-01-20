@@ -98,6 +98,8 @@ void identificar_comando(comando_t *comando) {
     comando->id_comando = 'r';
   } else if (strcmp(comando->palabras[0], "buscar") == 0) {
     comando->id_comando = 'b';
+  } else if (strcmp(comando->palabras[0], "suma") == 0) {
+    comando->id_comando = '+';
   } else {
     comando->id_comando = '\0';
   }
@@ -260,6 +262,9 @@ void ejecutar_comando(estado_t *estado, comando_t comando) {
       break;
     case 'b':
       comando_buscar(estado, comando.palabras[1]);
+      break;
+    case '+':
+      comando_suma(&estado->origen);
       break;
     case 's':
       break;
